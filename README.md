@@ -15,3 +15,4 @@ Final Project for App Dev III
 * Icons: https://icons8.com/icons
 * Photos: https://www.pexels.com/
 * Music: https://www.bensound.com/royalty-free-music/track/tomorrow
+* Font Used: https://www.urbanfonts.com/fonts/Run_Wild.font
