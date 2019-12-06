@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="28p-uJ-HSt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RunWild-Demo.ttf">
+            <string>RunWild</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Photos View Controller-->
+        <scene sceneID="Zv1-ob-51A">
+            <objects>
+                <viewController id="28p-uJ-HSt" customClass="PhotosViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cou-ZU-9Kz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PhotoGall" translatesAutoresizingMaskIntoConstraints="NO" id="gxB-qH-snd">
+                                <rect key="frame" x="-55" y="-16" width="491" height="939"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="cpJ-Zr-7p9">
+                                <rect key="frame" x="129" y="691" width="156" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.10569228980000001" green="0.16679731010000001" blue="0.20939266679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xz5-iJ-3Yz">
+                                <rect key="frame" x="20" y="231" width="374" height="452"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="iXh-bh-eFY"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="2Xo-8U-AsU"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photo Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpV-wB-aao">
+                                <rect key="frame" x="36" y="81" width="342" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="RunWild" family="Run Wild - Demo" pointSize="62"/>
+                                <color key="textColor" red="0.10569228980000001" green="0.16679731010000001" blue="0.20939266679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.74509803921568629" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zMB-zp-0G4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-photo-gallery-40" id="1eO-kp-uRC"/>
+                    <connections>
+                        <outlet property="photosPageControl" destination="cpJ-Zr-7p9" id="1GR-os-0IE"/>
+                        <outlet property="photosScrollView" destination="Xz5-iJ-3Yz" id="OeU-8M-AUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaW-jY-hjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863.768115942029" y="-253.125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PhotoGall" width="565" height="888"/>
+        <image name="icons8-photo-gallery-40" width="40" height="40"/>
+    </resources>
+</document>

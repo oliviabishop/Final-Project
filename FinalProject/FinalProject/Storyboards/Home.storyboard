@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eba-dw-H66">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RunWild-Demo.ttf">
+            <string>RunWild</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="BLi-fZ-7Lk">
+            <objects>
+                <viewController id="eba-dw-H66" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3PF-rU-DCM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Homepage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7i-xR-NPg">
+                                <rect key="frame" x="-37" y="-41" width="514" height="1067"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olivia Bishop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhY-VF-deK">
+                                <rect key="frame" x="59" y="368" width="296" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="RunWild" family="Run Wild - Demo" pointSize="57"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.16862745098039217" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.7450980544090271" blue="0.65490198135375977" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <viewLayoutGuide key="safeArea" id="ocV-lW-edj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-home-40" id="RJo-2m-aZW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqB-Xl-aah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="-672.32142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Homepage" width="502" height="752"/>
+        <image name="icons8-home-40" width="40" height="40"/>
+    </resources>
+</document>
